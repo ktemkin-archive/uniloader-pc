@@ -1,0 +1,7 @@
+U:\PC_Client\Unilab\Unilab\obj\Debug\ResolveAssemblyReference.cache
+U:\PC_Client\Unilab\Unilab\bin\Debug\Unilab.dll
+U:\PC_Client\Unilab\Unilab\bin\Debug\Unilab.pdb
+U:\PC_Client\Unilab\Unilab\bin\Debug\LibUsbDotNet.dll
+U:\PC_Client\Unilab\Unilab\bin\Debug\LibUsbDotNet.xml
+U:\PC_Client\Unilab\Unilab\obj\Debug\Unilab.dll
+U:\PC_Client\Unilab\Unilab\obj\Debug\Unilab.pdb

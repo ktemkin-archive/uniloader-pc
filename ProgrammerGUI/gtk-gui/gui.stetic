@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/ProgrammerGUI.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="517 450">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">Unified Programmer</property>
+    <property name="Icon">stock:gtk-sort-ascending Menu</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <property name="Resizable">False</property>
+    <property name="AllowGrow">False</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.VBox" id="boxLayout">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <child>
+          <widget class="Gtk.Image" id="image5">
+            <property name="MemberName" />
+            <property name="Pixbuf">resource:ProgrammerGUI.watson_dash_smaller.png</property>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Notebook" id="tabLayout">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="CurrentPage">0</property>
+            <child>
+              <widget class="Gtk.Fixed" id="fixed2">
+                <property name="MemberName" />
+                <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.FileChooserButton" id="fileHex">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">489</property>
+                    <property name="ShowHidden">True</property>
+                  </widget>
+                  <packing>
+                    <property name="X">8</property>
+                    <property name="Y">34</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="label6">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">Select the intel Hex file to be programmed:</property>
+                  </widget>
+                  <packing>
+                    <property name="X">11</property>
+                    <property name="Y">12</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="lblHexStatistics">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">477</property>
+                    <property name="HeightRequest">65</property>
+                    <property name="Visible">False</property>
+                    <property name="LabelProp" translatable="yes">&lt;b&gt;Program Memory Available:&lt;/b&gt; XX
+&lt;b&gt;Data Memory Available:&lt;/b&gt; YY
+</property>
+                    <property name="UseMarkup">True</property>
+                    <property name="MaxWidthChars">57</property>
+                  </widget>
+                  <packing>
+                    <property name="X">16</property>
+                    <property name="Y">80</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="btnHexProgram">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">115</property>
+                    <property name="Sensitive">False</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextAndIcon</property>
+                    <property name="Icon">stock:gtk-jump-to Menu</property>
+                    <property name="Label" translatable="yes">Program</property>
+                    <property name="UseUnderline">True</property>
+                  </widget>
+                  <packing>
+                    <property name="X">379</property>
+                    <property name="Y">241</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="lblOldHexWarning">
+                    <property name="MemberName" />
+                    <property name="Visible">False</property>
+                    <property name="LabelProp" translatable="yes">&lt;b&gt;Warning!&lt;/b&gt; The file you're programming hasn't changed
+since the previous programming. (Did you recompile?)</property>
+                    <property name="UseMarkup">True</property>
+                    <property name="Angle">360</property>
+                  </widget>
+                  <packing>
+                    <property name="X">13</property>
+                    <property name="Y">230</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="btnHexRefresh">
+                    <property name="MemberName" />
+                    <property name="Sensitive">False</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextAndIcon</property>
+                    <property name="Icon">stock:gtk-refresh Menu</property>
+                    <property name="Label" translatable="yes">_Refresh</property>
+                    <property name="UseUnderline">True</property>
+                  </widget>
+                  <packing>
+                    <property name="X">419</property>
+                    <property name="Y">71</property>
+                  </packing>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label1">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Microcontroller Only</property>
+              </widget>
+              <packing>
+                <property name="type">tab</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder />
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label2">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">FPGA Only</property>
+              </widget>
+              <packing>
+                <property name="type">tab</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder />
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label3">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Full Kit</property>
+              </widget>
+              <packing>
+                <property name="type">tab</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder />
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label5">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Ready Modules</property>
+              </widget>
+              <packing>
+                <property name="type">tab</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder />
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label4">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Advanced</property>
+              </widget>
+              <packing>
+                <property name="type">tab</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ProgressBar" id="progressBar">
+            <property name="MemberName" />
+            <property name="WidthRequest">505</property>
+            <property name="HeightRequest">0</property>
+            <property name="Text" translatable="yes"> </property>
+          </widget>
+          <packing>
+            <property name="Position">2</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Dialog" id="ProgrammerGUI.DeviceWaiting" design-size="400 139">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">Waiting for device...</property>
+    <property name="WindowPosition">CenterAlways</property>
+    <property name="Modal">True</property>
+    <property name="Resizable">False</property>
+    <property name="AllowGrow">False</property>
+    <property name="Buttons">1</property>
+    <property name="HelpButton">False</property>
+    <child internal-child="VBox">
+      <widget class="Gtk.VBox" id="dialog1_VBox">
+        <property name="MemberName" />
+        <property name="BorderWidth">2</property>
+        <child>
+          <widget class="Gtk.Label" id="lblWaiting">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">label4</property>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ProgressBar" id="progressbar3">
+            <property name="MemberName" />
+            <property name="Text" translatable="yes" />
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+    <child internal-child="ActionArea">
+      <widget class="Gtk.HButtonBox" id="dialog1_ActionArea">
+        <property name="MemberName" />
+        <property name="Spacing">10</property>
+        <property name="BorderWidth">5</property>
+        <property name="Size">1</property>
+        <property name="LayoutStyle">End</property>
+        <child>
+          <widget class="Gtk.Button" id="buttonCancel">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="UseStock">True</property>
+            <property name="Type">StockItem</property>
+            <property name="StockId">gtk-cancel</property>
+            <property name="ResponseId">-6</property>
+            <property name="label">gtk-cancel</property>
+          </widget>
+          <packing>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>

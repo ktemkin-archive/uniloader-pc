@@ -1,0 +1,11 @@
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\obj\x86\Debug\CapacityControl.CapacityControl.resources
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\obj\x86\Debug\CapacityControl.demo.resources
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\obj\x86\Debug\CapacityControl.Properties.Resources.resources
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\bin\Debug\CapacityControl.exe
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\bin\Debug\CapacityControl.pdb
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\bin\Debug\ZedGraph.dll
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\obj\x86\Debug\CapacityControl.exe
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\obj\x86\Debug\CapacityControl.pdb

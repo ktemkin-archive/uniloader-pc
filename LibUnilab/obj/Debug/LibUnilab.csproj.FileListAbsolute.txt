@@ -1,0 +1,6 @@
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\LibUnilab\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\LibUnilab\bin\Debug\LibUnilab.dll
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\LibUnilab\bin\Debug\LibUnilab.pdb
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\LibUnilab\bin\Debug\LibUsbDotNet.dll
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\LibUnilab\obj\Debug\LibUnilab.dll
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\LibUnilab\obj\Debug\LibUnilab.pdb

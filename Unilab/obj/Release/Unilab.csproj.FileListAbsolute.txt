@@ -1,0 +1,5 @@
+U:\PC_Client\Unilab\Unilab\bin\Release\Unilab.dll
+U:\PC_Client\Unilab\Unilab\bin\Release\LibUsbDotNet.dll
+U:\PC_Client\Unilab\Unilab\bin\Release\LibUsbDotNet.xml
+U:\PC_Client\Unilab\Unilab\obj\Release\ResolveAssemblyReference.cache
+U:\PC_Client\Unilab\Unilab\obj\Release\Unilab.dll

@@ -1,0 +1,11 @@
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\bin\Release\CapacityControl.pdb
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\bin\Release\ZedGraph.dll
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\obj\x86\Release\FilledContainer.demo.resources
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\obj\x86\Release\FilledContainer.Properties.Resources.resources
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\ktemkin\My Documents\Visual Studio 2010\Projects\Unilab\CapacityControl\obj\x86\Release\CapacityControl.pdb
+C:\Documents and Settings\ktemkin\my documents\visual studio 2010\Projects\Unilab\CapacityControl\obj\x86\Release\FilledContainer.VerticalFilledContainer.resources
+C:\Documents and Settings\ktemkin\my documents\visual studio 2010\Projects\Unilab\CapacityControl\bin\Release\CapacityControl.dll
+C:\Documents and Settings\ktemkin\my documents\visual studio 2010\Projects\Unilab\CapacityControl\obj\x86\Release\CapacityControl.dll

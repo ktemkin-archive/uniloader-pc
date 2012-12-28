@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8A7D12B9-D64B-4457-AEC0-72ABD59A80CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Unilab</RootNamespace>
+    <AssemblyName>Unilab</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="LibUsbDotNet, Version=2.2.8.104, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PortableUSB\LibUsbDotNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Programming\ProgrammerInstruction.cs" />
+    <Compile Include="Programming\Programmer.cs" />
+    <Compile Include="Programming\ProgrammingConnection.cs" />
+    <Compile Include="Programming\Exceptions\InvalidPacketException.cs" />
+    <Compile Include="Programming\FileFormats\IntelHex.cs" />
+    <Compile Include="AVR\HW.cs" />
+    <Compile Include="Programming\Exceptions\DeviceInUseException.cs" />
+    <Compile Include="Programming\Exceptions\CommunicationErrorException.cs" />
+    <Compile Include="Programming\Exceptions\DeviceNotFoundException.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="HID\" />
+    <Folder Include="Programming\" />
+    <Folder Include="Programming\Exceptions\" />
+    <Folder Include="Programming\FileFormats\" />
+    <Folder Include="AVR\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,82 @@
+using System;
+using Unilab.HID;
+
+namespace Unilab.Programming
+{
+	/// <summary>
+	/// 	Lower-level API provider for Programmer connections.
+	///		(Note the lack of checksums or CRCs; these are handled by the USB stack.)
+	/// </summary>
+	internal class ProgrammingConnection
+	{	
+		//TODO: These should be abstracted to a configuration XML.
+		//(Afterwards they can be represented by a ReadOnly reference.)
+		const int VID = 0x16C0;
+		const int PID = 0x0480;
+		const int UsagePage = 0xFFAB;
+		const int Usage = 0x0201;
+		
+		/// <summary>
+		/// 	The raw connection to the Unilab device.
+		/// </summary>
+		HIDConnection device;
+		
+	
+		/// <summary>
+		/// 	Creates a new ProgrammingConnection; if the Unified Lab Kit can't be found, 
+		/// 	it throws a DeviceNotConnected excpetion.
+		/// </summary>	
+		/// <param name="Timeout">
+		/// 	The amount of time to wait before the system decides the device isn't connected.
+		/// </param>
+		public ProgrammingConnection (int Timeout)
+		{
+			//Create a new raw HID connection to the Unilab device.
+			device = new HIDConnection(VID, PID, Usage, UsagePage);			
+		}
+		
+		#region Public Methods
+		
+		/// <summary>
+		/// 	Sends a Programmer packet, which includes 
+		/// </summary>
+		/// <param name="instr">
+		/// A <see cref="ProgrammerInsturction"/>
+		/// </param>
+		/// <param name="payload">
+		/// A <see cref="System.Byte[]"/>
+		/// </param>
+		public void sendPacket(ProgrammerInsturction instr, byte[] payload)
+		{
+			//throw an exception if the payload fails to validate
+			validatePayload(payload);
+			
+			
+		}
+		
+		#endregion
+		
+		#region Private Methods
+		
+			/// <summary>
+			/// 	Check a given payload, and throws an exception if it is invalid.
+			/// </summary>
+			/// <param name="payload">
+			///		The data to be sent to the device.
+			/// </param>
+			private void validatePayload(byte[] payload)
+			{
+				if(payload == null)
+					throw new NullReferenceException("Payload was null!");
+				
+				if(payload.Length > 48)
+					throw new InvalidPayloadException("Payload is too long! (Must be 48 bytes!)");
+				
+				if(payload.Length < 48)
+					throw new InvalidPayloadException("Payload is too short! (Must be 48 bytes!)");
+			}
+		
+		#endregion
+	}
+}
+
